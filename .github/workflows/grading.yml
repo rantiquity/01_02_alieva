@@ -30,8 +30,7 @@ jobs:
         with:
           packages: |
             any::testthat
-            any::dplyr
-            any::tidyr
+            any::tidyverse
             any::gutenbergr
 
       # 5. Запускаем скрытые тесты, указывая путь к подпапке

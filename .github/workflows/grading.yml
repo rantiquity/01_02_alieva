@@ -2,7 +2,7 @@ name: Autograding R
 
 on: [push]
 
-jobs:
+jobs: 
   grade:
     runs-on: ubuntu-latest
     env:

@@ -3,7 +3,7 @@ library(gutenbergr)
 library(tidyverse)
 
 works <- gutenberg_works()
-
+ 
 # В каждом пункте используйте оператор pipe, не сохраняйте промежуточные результаты!
 
 # (1) Отберите ряды, в которых gutenberg_author_id равен 65 или 410;

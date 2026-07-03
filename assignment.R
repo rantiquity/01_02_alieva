@@ -2,7 +2,7 @@
 library(gutenbergr)
 library(tidyverse)
 
-works <- gutenberg_works()
+works <- gutenberg_works() 
  
 # В каждом пункте используйте оператор pipe, не сохраняйте промежуточные результаты!
 

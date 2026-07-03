@@ -34,11 +34,11 @@ jobs:
             any::tidyr
             any::gutenbergr
 
-      # 5. Запускаем скрытые тесты с гарантированным падением при ошибке
+      # 5. Запускаем скрытые тесты, указывая путь к подпапке
       - name: Run hidden tests
         run: |
           Rscript -e '
-            results <- testthat::test_file("test_hidden.R")
+            results <- testthat::test_file("hidden_tests_dir/test_hidden.R")
             df <- as.data.frame(results)
             if (sum(df$failed) > 0 || sum(df$error) > 0) {
               stop("Тесты не пройдены!")

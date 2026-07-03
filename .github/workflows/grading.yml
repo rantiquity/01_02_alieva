@@ -16,7 +16,7 @@ jobs:
         with:
           repository: 'rantiquity/01_02_Tabular_Test'
           token: ${{ secrets.TESTS_DOWNLOAD_TOKEN }}
-          clean: false
+          path: 'hidden_tests_dir' 
 
       # 3. Разворачиваем среду R
       - name: Set up R
